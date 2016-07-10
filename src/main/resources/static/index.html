@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.7/angular-resource.js"></script>
+  <script src="app.js"></script>
+  <script src="services.js"></script>
+  <script src="controllers.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" ui-sref="index">Product App</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref="index">Home</a></li>
+            <li ><a ui-sref="newProduct">Add Product</a></li>
+          </ul>
+        </div>
+          
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row top-buffer">
+        <div class="col-xs-8 col-xs-offset-2">
+          <div ui-view></div> <!-- This is where our views will load -->
+        </div>
+      </div>
+    </div>
+</html>

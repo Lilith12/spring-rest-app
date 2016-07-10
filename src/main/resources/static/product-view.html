@@ -1,0 +1,25 @@
+<table class="table table-striped table-bordered">
+  <tr>
+    <td><h3>Details for {{product.name}}</h3></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Product id</td>
+    <td>{{product.id}}</td>
+  </tr>
+  <tr>
+    <td>Product name</td>
+    <td>{{product.name}}</td>
+  </tr>
+  <tr>
+    <td>Product details</td>
+    <td>{{product.details}}</td>
+  </tr>
+  <tr>
+    <td>Product price</td>
+    <td>{{product.price}}</td>
+  </tr>
+</table>
+<div>
+  <a class="btn btn-primary" ui-sref="editProduct({id:product.id})">Edit</a>
+</div>
